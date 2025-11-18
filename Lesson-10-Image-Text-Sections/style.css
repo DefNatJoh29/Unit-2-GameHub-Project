@@ -1,0 +1,257 @@
+/* LESSON 6: Setup & Hero Section*/
+
+
+/* Reset & Base Styles */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+/* container for consistent width */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border-radius: 15px;
+}
+
+/* header section */
+.main-nav a:hover {
+    color: #8d6746;
+    /* text-decoration: underline; */
+    border-bottom: 2px solid #816317e4;
+    padding-bottom: 3px;
+}
+.main-nav a:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 4px;
+}
+.main-header {
+    background-color: #000000f1;
+    padding: 20px 0;
+}
+
+
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+/* logo hover */
+
+.logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: color 0.5s ease;
+}
+
+
+
+/* HERO SECTION */
+.hero {
+    background-color: #3c4041;
+    color: #ffffff;
+    padding: 120px 0;
+    text-align: center;
+}
+
+
+
+.hero-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);  /* ADD THIS! */
+    transition: color 0.45s ease, transform 0.5s ease;
+    /* Gradient text effect */
+    background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-title:hover {
+    color: #f39c12;
+    transform: scale(1.05);
+}
+
+
+
+.hero-subtitle {
+    font-size: 20px;
+    margin-bottom: 40px;
+    max-width: 700px;     
+    margin-left: auto;    
+    margin-right: auto;   
+}
+
+
+
+/* BUTTONS */
+.btn {
+    padding: 20px 40px;
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+
+.btn-primary {
+    background-color: #ffbe6e;
+    color: #ffffff;
+}
+
+
+
+.btn:hover {
+    transform: translateY(-2px) scale(1.05);
+    opacity: 0.9;
+}
+
+
+
+.btn:active {
+    transform: translateY(0);
+}
+
+
+/* note for futere lessons:
+- Each new lesson will add sections BELOW
+- Keep this file organized with comments
+- We'll enhance existing sections as we learn more */
+.features-grid {
+    display: flex; /* Activate Flexbox */
+    justify-content: space-between; /* Distribute space */
+    gap: 30px; /* Space between items */
+}
+.feature-card {
+    flex: 1; /* Each card takes equal width */
+}
+.feature-card {
+    padding: 40px 30px; /* 40px top/bottom, 30px left/right */
+}
+.feature-card {
+    border-radius: 12px;
+    margin-bottom: 75px;
+}
+.feature-card {
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);  /* ADD THIS! */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #d7b45ce4;
+}
+.feature-card:hover {
+    transform: translateY(-10px); /* Lift up 10px */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15); /* Stronger shadow */
+}
+/* 3. Section background same color as card */
+.features {
+background-color: #545454; /* Same as card - no contrast! */
+}
+/* ===================================
+   LESSON 9: TYPOGRAPHY SYSTEM
+   =================================== */
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+/* Lesson 10 */
+.about{
+    padding: 80px 0;
+    background-color:#312f2c;
+    border-radius: 12px;
+}
+.about-content {
+    display:flex;
+    align-items:center;
+    gap:60px;
+}
+.about-text {
+    flex:1;
+}
+.about-image {
+    flex: 1;
+}
+.about-text h2 {
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+}
+.about-text p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+.about-image img{
+    width:60%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
