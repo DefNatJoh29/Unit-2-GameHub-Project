@@ -78,7 +78,7 @@ body {
 
 /* HERO SECTION */
 .hero {
-    background-color: #3c4041;
+    background-color: #00ccff;
     color: #ffffff;
     padding: 120px 0;
     text-align: center;
@@ -178,7 +178,7 @@ body {
 }
 /* 3. Section background same color as card */
 .features {
-background-color: #545454; /* Same as card - no contrast! */
+background-color: #ffffff; /* Same as card - no contrast! */
 }
 /* ===================================
    LESSON 9: TYPOGRAPHY SYSTEM
@@ -223,7 +223,6 @@ p {
 }
 .about-image {
     flex: 1;
-    
 }
 .about-text h2 {
     color: #ffffff;
@@ -242,6 +241,13 @@ p {
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     flex-direction: row-reverse;
+    transition: transform 0.3s ease;
+}
+.about-image img:hover{
+    transform: scale(1.1)
+}
+.community-image img:hover{
+    transform: scale(1.1)
 }
 .community-content{
     display: flex;
@@ -254,8 +260,11 @@ p {
     margin-bottom: 25px;
     border-radius: 15px;
 }
-.community-image{
+.community-image img{
     border-radius: 12px;
+    transition: transform 0.3s ease;
+    width: 40%;
+
 }
 
 
